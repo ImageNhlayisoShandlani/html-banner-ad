@@ -30,6 +30,15 @@ section {
   flex-direction: column;
 }
 
+.right p {
+  margin-top: -1rem;
+  color: red;
+  font-style: italic;
+  font-weight: 800;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+
 .picth {
   width: 250px;
   height: 500px;
@@ -42,20 +51,34 @@ section {
   overflow: hidden;
 }
 
-.goal {
+#goal {
   transform: scale(0.55);
   position: absolute;
-  top: -9.6rem;
+  top: -15.6rem;
+  transition: all 0.5s;
 }
 
-.keeper {
+#keeper {
   position: absolute;
   top: -15rem;
+  left: -100%;
   transform: scale(0.25);
+  transition: all 0.5s;
 }
 
-.ball {
+#ball {
   position: absolute;
   transform: scale(0.56);
-  top: -1rem;
+  top: 20rem;
+  transition: all 0.5s;
+}
+
+#ball.heartBeat {
+  animation: beat 0.25s infinite alternate;
+}
+
+@keyframes beat {
+  to {
+    transform: scale(0.65);
+  }
 }
