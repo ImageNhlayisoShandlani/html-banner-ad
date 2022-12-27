@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play Mini Soccer</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="heading"><h2>Mini Soccer</h2></div>
+
+        <div class="game">
+          <div class="right">
+            <h3>Score <span>0 - 0</span></h3>
+
+            <div class="picth">
+              <img src="img/goal-net-alt.png" alt="" class="goal" />
+              <img src="img/person-alt.png" alt="" class="keeper" />
+              <img src="img/ball(2).png" alt="" class="ball" />
+            </div>
+          </div>
+          <div class="left">
+            <div class="left-wrap">
+              <h4>How to play this</h4>
+              <ol>
+                <li>Press some</li>
+                <li>Press some</li>
+                <li>Press some</li>
+                <li>Press some</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      document.getElementById("img").addEventListener("click", (img) => {
+        document.getElementById("img").style.scale = "2";
+      });
+    </script>
+  </body>
+</html>

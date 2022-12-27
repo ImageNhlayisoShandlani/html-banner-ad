@@ -1,0 +1,61 @@
+html,
+body {
+  padding: 1.25rem;
+}
+
+main,
+section {
+  width: 100%;
+  height: fit-content;
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.game {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.picth {
+  width: 250px;
+  height: 500px;
+  background: url(../img/field.png) no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.goal {
+  transform: scale(0.55);
+  position: absolute;
+  top: -9.6rem;
+}
+
+.keeper {
+  position: absolute;
+  top: -15rem;
+  transform: scale(0.25);
+}
+
+.ball {
+  position: absolute;
+  transform: scale(0.56);
+  top: -1rem;
+}
