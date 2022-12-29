@@ -1,6 +1,6 @@
 html,
 body {
-  padding: 1.25rem;
+  padding: 1rem;
 }
 
 main,
@@ -71,6 +71,7 @@ section {
   transform: scale(0.56);
   top: 20rem;
   transition: all 0.5s;
+  transition-timing-function: linear;
 }
 
 #ball.heartBeat {
